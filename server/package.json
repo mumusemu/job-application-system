@@ -1,0 +1,40 @@
+{
+  "name": "job-application-system-selin-sezer",
+  "version": "1.0.0",
+  "description": "job application system developed from selin sezer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "selin sezer",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.21.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "1.19.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "express-mysql-session": "2.1.8",
+    "express-session": "1.17.2",
+    "express-validator": "^7.2.0",
+    "json2csv": "5.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "3.1.2",
+    "morgan": "^1.9.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "2.2.5",
+    "node-excel-export": "1.4.4",
+    "nodemon": "2.0.6",
+    "passport": "0.5.2",
+    "passport-saml": "3.2.1",
+    "pug": "3.0.0",
+    "sequelize": "6.3.5",
+    "should": "13.2.3",
+    "should-http": "0.1.1",
+    "winston": "3.1.0"
+  }
+}
