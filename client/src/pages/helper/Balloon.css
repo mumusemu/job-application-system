@@ -1,0 +1,72 @@
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px);
+    opacity: 0;
+  }
+}
+
+.balloon-container {
+  position: absolute;
+  bottom: 0;
+}
+
+.balloon {
+  width: 60px;
+  height: 80px;
+  background-color: #ff69b4; /* Renkleri değiştirebilirsiniz */
+  border-radius: 50% 50% 50% 0;
+  position: relative;
+  animation: float 10s ease-in-out infinite;
+}
+
+.balloon::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.string {
+  width: 2px;
+  height: 100px;
+  background-color: #333;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: float 12s ease-in-out infinite;
+}
+
+.balloon:nth-child(1) {
+  left: 10%;
+  animation: float 12s ease-in-out infinite;
+}
+
+.balloon:nth-child(2) {
+  left: 30%;
+  animation: float 14s ease-in-out infinite;
+}
+
+.balloon:nth-child(3) {
+  left: 50%;
+  animation: float 16s ease-in-out infinite;
+}
+
+.balloon:nth-child(4) {
+  left: 70%;
+  animation: float 18s ease-in-out infinite;
+}
+
+.balloon:nth-child(5) {
+  left: 90%;
+  animation: float 20s ease-in-out infinite;
+}
